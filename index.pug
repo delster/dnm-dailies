@@ -1,0 +1,58 @@
+doctype html
+
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Dragon Nest M Daily Tracker
+    //- Import Google Icon Font
+    link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    //- Import materialize.css
+    link(rel="stylesheet", href="css/materialize.min.css", type="text/css")
+    //- Custom CSS
+    link(rel="stylesheet", href="css/style.css", type="text/css")
+  body
+    .container.row
+      section#notices.col.s12.center-align
+        h1 Daily Resets at 5am Eastern
+        button#reset.btn.waves-effect.waves-light Reset Checklists
+      section#dc-spending.col.s12.l6
+        h4.center-align Spending Dragon Coins
+        ul.collection
+          li.collection-item
+            label
+              input(type="checkbox")
+              span Item 1
+              span.secondary-content.green-text HIGH PRIORITY
+          li.collection-item
+            label
+              input(type="checkbox")
+              span Item 2
+              span.secondary-content.orange-text MEDIUM PRIORITY
+          li.collection-item
+            label
+              input(type="checkbox")
+              span Item 3
+              span.secondary-content.red-text LOW PRIORITY
+      section#dc-earning.col.s12.l6
+        h4.center-align Earning Dragon Coins
+        ul.collection
+          li.collection-item
+            label
+              input(type="checkbox")
+              span Item 1
+              span.secondary-content.green-text HIGH PRIORITY
+          li.collection-item
+            label
+              input(type="checkbox")
+              span Item 2
+              span.secondary-content.orange-text MEDIUM PRIORITY
+          li.collection-item
+            label
+              input(type="checkbox")
+              span Item 3
+              span.secondary-content.red-text LOW PRIORITY
+    script(type="text/javascript", src="js/materialize.min.js")
+    script(type="text/javascript", src="js/js.cookie.min.js")
+    script(type="text/javascript", src="js/main.js")
